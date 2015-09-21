@@ -1,54 +1,35 @@
-var app = {
-  // Application Constructor
-  initialize: function() {
-    this.bindEvents();
-  },
-  // Bind Event Listeners
-  //
-  // Bind any events that are required on startup. Common events are:
-  // 'load', 'deviceready', 'offline', and 'online'.
-  bindEvents: function() {
-    document.addEventListener('deviceready', this.onDeviceReady, false);
-  },
-  // deviceready Event Handler
-  //
-  // The scope of 'this' is the event. In order to call the 'receivedEvent'
-  // function, we must explicitly call 'app.receivedEvent(...);'
-  onDeviceReady: function() {
-    app.receivedEvent('deviceready');
+window.video = null;
 
-    var video = videojs('main');
-    video.requestFullscreen();
-    video.on('play', function() {
-      writeLog('Video played');
-    });
+$(function() {
+  FastClick.attach(document.body);
+  video = $('#main');
+  var videoElement = video[0];
 
-    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(dir) {
-      // console.log('got main dir', dir);
-      dir.getFile('log.txt', {create: true}, function(file) {
-        // console.log('got the file', file);
-        logOb = file;
-        writeLog('App started');
-      });
-    });
-  },
-  // Update DOM on a Received Event
-  receivedEvent: function(id) {
-    console.log('Received Event: ' + id);
-  }
-};
+  var width = window.innerWidth;
+  var height = window.innerHeight;
 
-app.initialize();
+  video.css({
+    'width': '100%',
+    'height': height + 'px'
+  });
 
-// Functions
+  video.on('click', function(e) {
+    if (!videoElement.paused) {
+      videoElement.pause();
+    } else {
+      videoElement.play();
+    }
+  });
 
-function writeLog(str) {
-  if(!logOb) return;
-  var log = str + ' [' + (new Date()) + ']\n';
-  // console.log('going to log '+log);
-  logOb.createWriter(function(fileWriter) {
-    fileWriter.seek(fileWriter.length);
-    var blob = new Blob([log], {type:'text/plain'});
-    fileWriter.write(blob);
-  }, fail);
-}
+  video.on('dblclick', function(e) {
+    videoElement.currentTime = 0;
+  });
+
+  video.on('play', function(e) {
+    $('body').addClass('playing');
+  });
+
+  video.on('pause', function(e) {
+    $('body').removeClass('playing');
+  });
+});
