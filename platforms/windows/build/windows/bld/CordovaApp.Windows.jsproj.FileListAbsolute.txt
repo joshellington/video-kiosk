@@ -1,0 +1,17 @@
+C:\dev\video-kiosk\platforms\windows\build\windows\debug\anycpu\resources.pri
+C:\dev\video-kiosk\platforms\windows\build\windows\debug\anycpu\AppxManifest.xml
+C:\dev\video-kiosk\platforms\windows\build\windows\debug\anycpu\CordovaApp.Windows.build.appxrecipe
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\priconfig.xml
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\priconfig.xml.intermediate
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\layout.resfiles
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\layout.resfiles.intermediate
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\resources.resfiles
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\resources.resfiles.intermediate
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\pri.resfiles
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\pri.resfiles.intermediate
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\qualifiers.txt
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\qualifiers.txt.intermediate
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\MultipleQualifiersPerDimensionFound.txt
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\ProjectArchitectures.txt
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\package.map.txt
+C:\dev\video-kiosk\platforms\windows\build\windows\bld\_pkginfo.txt

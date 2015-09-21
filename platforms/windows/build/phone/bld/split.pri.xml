@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="com.joshellington.videokiosk" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://com.joshellington.videokiosk/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/SplashScreen.png"/>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/SplashScreenPhone.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\SplashScreenPhone.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square30x30Logo.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://com.joshellington.videokiosk/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://com.joshellington.videokiosk/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="main.css" uri="ms-resource://com.joshellington.videokiosk/Files/www/main.css">
+					<Candidate type="Path">
+						<Value>www\main.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="video.mp4" uri="ms-resource://com.joshellington.videokiosk/Files/www/video.mp4">
+					<Candidate type="Path">
+						<Value>www\video.mp4</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="fastclick.min.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/js/fastclick.min.js">
+						<Candidate type="Path">
+							<Value>www\js\fastclick.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery-1.11.3.min.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/js/jquery-1.11.3.min.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery-1.11.3.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/js/main.js">
+						<Candidate type="Path">
+							<Value>www\js\main.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="WinJS">
+					<ResourceMapSubtree name="js">
+						<NamedResource name="base.js" uri="ms-resource://com.joshellington.videokiosk/Files/www/WinJS/js/base.js">
+							<Candidate type="Path">
+								<Value>www\WinJS\js\base.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
