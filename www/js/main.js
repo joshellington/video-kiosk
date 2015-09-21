@@ -36,7 +36,6 @@ $(function() {
 
   video.on('timeupdate', function(e) {
     var percentage = (videoElement.currentTime / videoElement.duration) * 100;
-    console.log(percentage);
     progressBar.width(percentage + '%');
   });
 });
