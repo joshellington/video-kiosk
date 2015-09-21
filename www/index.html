@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-http://www.apache.org/licenses/LICENSE-2.0
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
--->
-<html>
-<head>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <link rel="stylesheet" type="text/css" href="bower_components/video.js/dist/video-js/video-js.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title></title>
-</head>
-<body>
-  <video id="main" class="video-js vjs-default-skin"
-   preload="auto" width="640" height="264" poster="img/really-cool-video-poster.jpg"
-   data-setup='{}'>
-    <source src="videos/video.mp4" type='video/mp4'>
-  </video>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="play-button">
+      <svg class="play-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <path fill="#fff" d="M128,96v320l256-160L128,96L128,96z"/>
+      </svg>
+    </div>
+    <video id="main" src="video.mp4" autoplay loop>
+      Your browser does not support the <code>video</code> element.
+    </video>
 
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="bower_components/video.js/dist/video-js/video.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/fastclick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
