@@ -4,6 +4,7 @@ $(function() {
   FastClick.attach(document.body);
   video = $('#main');
   var videoElement = video[0];
+  var progressBar = $('.progress-bar div');
 
   var width = window.innerWidth;
   var height = window.innerHeight;
@@ -31,5 +32,11 @@ $(function() {
 
   video.on('pause', function(e) {
     $('body').removeClass('playing');
+  });
+
+  video.on('timeupdate', function(e) {
+    var percentage = (videoElement.currentTime / videoElement.duration) * 100;
+    console.log(percentage);
+    progressBar.width(percentage + '%');
   });
 });
